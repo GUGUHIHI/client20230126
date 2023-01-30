@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+        color : blue;
+        }
+
+        p {
+            color : chocolate;
+        }
+
+        /*선택자를 띄워쓰기 없이 연속 작성 */
+        /* 모든 조건을 만족하는 요소 선택 */
+    p.note {
+    background-color : yellow;
+    }
+
+    p.error{
+        text-decoration : line-through ;
+    }
+
+    p.error.note {
+        border : 5px solid;
+    }
+
+    .note.error {
+        border : 10px dotted black;
+    }
+
+    h1.error{
+        text-align : right;
+    }
+    </style>
+</head>
+<body>
+    <!-- h1.note*3>lorem^p.note.error*3>lorem -->
+    <h1 class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quae delectus aperiam! Rem, fugit sint. Accusamus, iure debitis necessitatibus libero deleniti vitae eos atque quasi quidem eaque, molestiae obcaecati reprehenderit!</h1>
+    <h1 class="note">Nisi quia labore repellendus exercitationem accusantium cupiditate maiores aut iusto, quas fugit! Voluptas consectetur deserunt deleniti eum numquam debitis molestias recusandae ipsa, officiis unde maiores fugit et ipsam quasi id?</h1>
+    <h1 class="note error">Fugiat nisi dolorum nam quae praesentium quos, dolore itaque reiciendis quam eaque sequi culpa fugit earum, consequatur, labore perferendis! Fugit ipsam quis iusto dolor necessitatibus, consectetur minus non aperiam nulla!</h1>
+    <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aperiam quidem, iure odio, quas, eaque dignissimos laudantium ducimus in ad error accusamus placeat numquam magnam saepe rerum quos cum voluptate.</p>
+    <p class="note error">Consectetur porro quo culpa pariatur distinctio consequatur eveniet ullam voluptatibus facilis maxime. Reiciendis sunt voluptates neque, repellendus beatae tenetur nostrum! Fugiat aperiam assumenda earum aliquid rerum tenetur, deserunt eaque quis!</p>
+    <p class="note error">Ipsum, libero cupiditate. Odit repellendus, consectetur est itaque temporibus impedit repellat, nostrum corrupti cumque, omnis quibusdam unde esse iure perferendis neque totam magni dolorem officiis labore cupiditate. Nobis, delectus minus!</p>
+</body>
+</html>

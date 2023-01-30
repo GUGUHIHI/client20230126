@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p{
+            color : blue;
+        }
+        /*인접형제선택자*/
+        h1 + p {
+            background-color : yellow;
+            color : coral;
+        }
+    </style>
+</head>
+<body>
+    <!-- (h1>lorem1^p>lorem5)*2+p>lorem5 -->
+    <h1>Lorem.</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <h1>Odio!</h1>
+    <p>Magni fuga temporibus vel est.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+</body>
+</html>
